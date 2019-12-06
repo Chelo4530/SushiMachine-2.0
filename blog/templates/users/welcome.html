@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<br>
+<h3>
+    Bienvenido <b>{{request.user.username}}</b>, 
+    esta página es exclusiva para usuarios registrados.
+</h3>
+
+<hr />
+<a href="/logout">Cerrar sesión</a>
+{% endblock %}
